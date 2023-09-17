@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    max-width: 1440px;
+    margin: auto;
+    background: #ffffff;
+    border: 10px solid black;
+}
+main{
+    background: #c9c5c5;
+}
+h1{
+    font-size: 30px;
+  }
+h1, h2{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+h4{
+    text-align: center;
+    margin-bottom: -15px;
+}
+p{
+    width: 95%;
+    margin: auto;
+    text-align: justify;
+}
+a{
+    color: rgb(248, 0, 0);
+}
+a:hover{
+    font-weight: bold;
+}
+
+/**************** 
+    Header 
+*****************/
+header {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    background: #c9c5c5;
+    height: 70px;
+}
+nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: all 0.3s linear;
+}
+.menu-icon {
+    display: none;
+}
+
+
+/* Main */
+/* sekce wallapaper */
+.wallpaper {
+    background: url(images/tapeta/austria-tapeta.png);
+    min-height: calc(100vh - 70px);
+    background-size: cover;
+    margin-bottom: 30px;
+}
+.introduction{
+    font-size: 80px;
+}
+i2{ 
+    font-size: 150px;
+    cursor: pointer;
+    position: absolute;
+    top: 17%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+ /* sekce fotogalerie */
+#scrollFoto {
+    margin-bottom: 0px;
+}
+.fotogalerie{
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    position: relative;
+}
+.fotogalerie img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.fotogalerie img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+    border: 5px solid black;
+}
+
+
+ /* sekce video */
+.video{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.video-wrapper{
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video-wrapper iframe{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+
+
+/* sekce tipy na výlet */
+.stráně, .jezera, .vodopády, .pekelňák  {
+    display: grid;
+    gap: 15px;
+    grid-template-columns:1fr 1fr 1fr;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.stráně img, .jezera img, .vodopády img, .pekelňák img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.stráně img:hover, .jezera img:hover, .vodopády img:hover, .pekelňák img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+    border: 5px solid black;
+}
+
+
+
+
+
+
+/* sekce Tipy na kola */
+.tipyNaKola{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+    gap: 5px;
+}
+.tipyNaKola a{
+    text-decoration: none;
+}
+.MTB,.Gravel,.Silnice,.Elektro{
+    border: 3px solid rgb(255, 255, 255);
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+.MTB h2,.Gravel h2,.Silnice h2,.Elektro h2{
+    margin-top: 0px;
+}
+.MTB img,.Gravel img,.Silnice img,.Elektro img{
+    width: 75%;
+    height: 75%;
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.MTB img:hover,.Gravel img:hover,.Silnice img:hover,.Elektro img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+}
+
+
+
+/* sekce roztřídění tipů kol */
+.kolo{
+    display: flex;
+    justify-content: center;
+}
+.kolo img{
+    width: 60%;
+    height: 60%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.tipyMTB, .tipyGravel, .tipySilnice, .tipyElektro{
+    width: 95%;
+    margin: auto;
+    display: none;
+}
+.box1, .box2, .box3, .box4{
+    border: 3px solid rgb(255, 255, 255);
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+.kolo img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+}
+
+
+
+/* sekce formulář */
+.form {
+    margin: auto;
+    margin-top: 40px;
+    height: 300px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+}
+.form h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+.form input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    outline: none;
+    color: white;
+    text-align: center;
+}
+form input[type="submit"] {
+    background-color: #db0000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+
+
+/* sekce footer */
+footer{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background: #c9c5c5;
+}
+footer p {
+    text-align: center;
+}
+.email{
+    text-align: center;
+}
+.top-page{
+    text-decoration: none;
+    background: #db0000;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: black;
+    border: 5px solid black;
+    font-size: 18px;
+    font-weight: bold;
+    position: fixed;
+    right: 1%;
+    bottom: 50px;
+    max-width: 1440px;
+}
+
+
+
+/* Stylování textu ve formuláři javascriptu */
+.valid {
+    color: greenyellow;
+    text-align: center;
+}
+.invalid {
+    color: red;
+    text-align: center;
+}
+
+
+
